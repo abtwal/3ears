@@ -13,7 +13,7 @@ set :yarn_flags, %w(--silent --no-progress)
 set :ssh_options, { forward_agent: true, auth_methods: %w(publickey) }
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-# append :linked_files, '.env'
+append :linked_files, '.env'
 append :linked_dirs, 'node_modules'
 # Default deploy_to directory is /var/www/my_app_name
 

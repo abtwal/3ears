@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+
 import React from 'react';
 import { render } from 'react-dom';
 import * as serviceWorker from './serviceWorker'; // do we need it?
@@ -6,9 +8,12 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MediaItem from './media-item';
 import MediaItems from './media-items';
 
+dotenv.config();
+
 const App = (
   <Router>
     <div>
+      { process.env.REACT_APP_API_URL }
       <nav>
         <ul>
           <li>
