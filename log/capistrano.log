@@ -1,0 +1,279 @@
+# Logfile created on 2019-06-06 16:05:13 +0300 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-06-06 16:05:13 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5c3b8d88] Running /usr/bin/env mkdir -p /tmp/3ears/ as threeears@3ears.com
+ DEBUG [5c3b8d88] Command: /usr/bin/env mkdir -p /tmp/3ears/
+  INFO [43d55d3b] Finished in 0.927 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/3ears/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/3ears/nvm-exec.sh 100.0%
+  INFO [d65222d3] Running /usr/bin/env chmod +x /tmp/3ears/nvm-exec.sh as threeears@3ears.com
+ DEBUG [d65222d3] Command: /usr/bin/env chmod +x /tmp/3ears/nvm-exec.sh
+  INFO [efe41f56] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [c46ac90c] Running [ -d $HOME/.nvm/v11.6.0 ] || [ -d $HOME/.nvm/versions/node/v11.6.0 ] as threeears@3ears.com
+ DEBUG [c46ac90c] Command: [ -d $HOME/.nvm/v11.6.0 ] || [ -d $HOME/.nvm/versions/node/v11.6.0 ]
+ DEBUG [842b473f] Finished in 0.159 seconds with exit status 1 (failed).
+ ERROR nvm: v11.6.0 is not installed or not found in any of $HOME/.nvm/v11.6.0 $HOME/.nvm/versions/node/v11.6.0
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-06-06 16:23:57 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [dad38750] Running /usr/bin/env mkdir -p /tmp/3ears/ as threeears@3ears.com
+ DEBUG [dad38750] Command: /usr/bin/env mkdir -p /tmp/3ears/
+  INFO [e1ddd9b9] Finished in 0.849 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/3ears/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/3ears/nvm-exec.sh 100.0%
+  INFO [ea260d0c] Running /usr/bin/env chmod +x /tmp/3ears/nvm-exec.sh as threeears@3ears.com
+ DEBUG [ea260d0c] Command: /usr/bin/env chmod +x /tmp/3ears/nvm-exec.sh
+  INFO [6918effc] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [a7726cfb] Running [ -d $HOME/.nvm/v12.4.0 ] || [ -d $HOME/.nvm/versions/node/v12.4.0 ] as threeears@3ears.com
+ DEBUG [a7726cfb] Command: [ -d $HOME/.nvm/v12.4.0 ] || [ -d $HOME/.nvm/versions/node/v12.4.0 ]
+ DEBUG [defea774] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [6c02ec04] Running /usr/bin/env mkdir -p /tmp as threeears@3ears.com
+ DEBUG [6c02ec04] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [7aa9e786] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-3ears-production-andreibuiko.sh 0.0%
+  INFO Uploading /tmp/git-ssh-3ears-production-andreibuiko.sh 100.0%
+  INFO [1aea6798] Running /usr/bin/env chmod 700 /tmp/git-ssh-3ears-production-andreibuiko.sh as threeears@3ears.com
+ DEBUG [1aea6798] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-3ears-production-andreibuiko.sh )
+  INFO [25960d78] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [2fbffbbc] Running /usr/bin/env git ls-remote git@github.com:abtwal/3ears.git HEAD as threeears@3ears.com
+ DEBUG [2fbffbbc] Command: ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git ls-remote git@github.com:abtwal/3ears.git HEAD )
+ DEBUG [81ef1877] 	Warning: Permanently added 'github.com,140.82.118.3' (RSA) to the list of known hosts.
+ DEBUG [81ef1877] 	bd9a2da9a9d4bd16319099f0371c903bb63e3342	HEAD
+  INFO [81ef1877] Finished in 1.604 seconds with exit status 0 (successful).
+  INFO [91bf9058] Running /usr/bin/env mkdir -p /home/threeears/apps/3ears/shared /home/threeears/apps/3ears/releases as threeears@3ears.com
+ DEBUG [91bf9058] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env mkdir -p /home/threeears/apps/3ears/shared /home/threeears/apps/3ears/releases )
+  INFO [93b54e9f] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [d2612390] Running /usr/bin/env mkdir -p /home/threeears/apps/3ears/shared/node_modules as threeears@3ears.com
+ DEBUG [d2612390] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env mkdir -p /home/threeears/apps/3ears/shared/node_modules )
+  INFO [b2c415f5] Finished in 0.174 seconds with exit status 0 (successful).
+ DEBUG [deb15a3f] Running [ -f /home/threeears/apps/3ears/current/REVISION ] as threeears@3ears.com
+ DEBUG [deb15a3f] Command: [ -f /home/threeears/apps/3ears/current/REVISION ]
+ DEBUG [902efe57] Finished in 0.171 seconds with exit status 1 (failed).
+ DEBUG [ad791068] Running [ -f /home/threeears/apps/3ears/repo/HEAD ] as threeears@3ears.com
+ DEBUG [ad791068] Command: [ -f /home/threeears/apps/3ears/repo/HEAD ]
+ DEBUG [070e0fd9] Finished in 0.171 seconds with exit status 1 (failed).
+ DEBUG [d6b2cd54] Running if test ! -d /home/threeears/apps/3ears; then echo "Directory does not exist '/home/threeears/apps/3ears'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [d6b2cd54] Command: if test ! -d /home/threeears/apps/3ears; then echo "Directory does not exist '/home/threeears/apps/3ears'" 1>&2; false; fi
+ DEBUG [7bd53b27] Finished in 0.172 seconds with exit status 0 (successful).
+  INFO [6429d488] Running /usr/bin/env git clone --mirror git@github.com:abtwal/3ears.git /home/threeears/apps/3ears/repo as threeears@3ears.com
+ DEBUG [6429d488] Command: cd /home/threeears/apps/3ears && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git clone --mirror git@github.com:abtwal/3ears.git /home/threeears/apps/3ears/repo )
+ DEBUG [4051db4a] 	Cloning into bare repository '/home/threeears/apps/3ears/repo'...
+  INFO [4051db4a] Finished in 4.317 seconds with exit status 0 (successful).
+ DEBUG [e8628ea2] Running if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [e8628ea2] Command: if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi
+ DEBUG [75a0b348] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [b3b64549] Running /usr/bin/env git remote set-url origin git@github.com:abtwal/3ears.git as threeears@3ears.com
+ DEBUG [b3b64549] Command: cd /home/threeears/apps/3ears/repo && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git remote set-url origin git@github.com:abtwal/3ears.git )
+  INFO [52a96979] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [59f9c85b] Running /usr/bin/env git remote update --prune as threeears@3ears.com
+ DEBUG [59f9c85b] Command: cd /home/threeears/apps/3ears/repo && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ce641088] 	Fetching origin
+  INFO [ce641088] Finished in 2.023 seconds with exit status 0 (successful).
+ DEBUG [7a520903] Running if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [7a520903] Command: if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi
+ DEBUG [1e830338] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [a6f10035] Running /usr/bin/env mkdir -p /home/threeears/apps/3ears/releases/20190606132401 as threeears@3ears.com
+ DEBUG [a6f10035] Command: cd /home/threeears/apps/3ears/repo && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env mkdir -p /home/threeears/apps/3ears/releases/20190606132401 )
+  INFO [98effbf4] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [7e952e32] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/threeears/apps/3ears/releases/20190606132401 as threeears@3ears.com
+ DEBUG [7e952e32] Command: cd /home/threeears/apps/3ears/repo && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/threeears/apps/3ears/releases/20190606132401 )
+  INFO [c7601790] Finished in 0.168 seconds with exit status 0 (successful).
+ DEBUG [b44255e4] Running if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [b44255e4] Command: if test ! -d /home/threeears/apps/3ears/repo; then echo "Directory does not exist '/home/threeears/apps/3ears/repo'" 1>&2; false; fi
+ DEBUG [3371f910] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [6963aec0] Running /usr/bin/env git rev-list --max-count=1 master as threeears@3ears.com
+ DEBUG [6963aec0] Command: cd /home/threeears/apps/3ears/repo && ( export NODE_VERSION="v12.4.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-3ears-production-andreibuiko.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c644da1a] 	bd9a2da9a9d4bd16319099f0371c903bb63e3342
+ DEBUG [c644da1a] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [6c2532b4] Running if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [6c2532b4] Command: if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi
+ DEBUG [22ac4226] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [338451ca] Running /usr/bin/env echo "bd9a2da9a9d4bd16319099f0371c903bb63e3342" > REVISION as threeears@3ears.com
+ DEBUG [338451ca] Command: cd /home/threeears/apps/3ears/releases/20190606132401 && ( export NODE_VERSION="v12.4.0" ; /usr/bin/env echo "bd9a2da9a9d4bd16319099f0371c903bb63e3342" > REVISION )
+  INFO [01bc8e3e] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [d75bc7c7] Running /usr/bin/env mkdir -p /home/threeears/apps/3ears/releases/20190606132401 as threeears@3ears.com
+ DEBUG [d75bc7c7] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env mkdir -p /home/threeears/apps/3ears/releases/20190606132401 )
+  INFO [8cffee3c] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [c2711a2e] Running [ -L /home/threeears/apps/3ears/releases/20190606132401/node_modules ] as threeears@3ears.com
+ DEBUG [c2711a2e] Command: [ -L /home/threeears/apps/3ears/releases/20190606132401/node_modules ]
+ DEBUG [cea8d0fe] Finished in 0.161 seconds with exit status 1 (failed).
+ DEBUG [56f471c9] Running [ -d /home/threeears/apps/3ears/releases/20190606132401/node_modules ] as threeears@3ears.com
+ DEBUG [56f471c9] Command: [ -d /home/threeears/apps/3ears/releases/20190606132401/node_modules ]
+ DEBUG [279a4f18] Finished in 0.157 seconds with exit status 1 (failed).
+  INFO [705a9242] Running /usr/bin/env ln -s /home/threeears/apps/3ears/shared/node_modules /home/threeears/apps/3ears/releases/20190606132401/node_modules as threeears@3ears.com
+ DEBUG [705a9242] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env ln -s /home/threeears/apps/3ears/shared/node_modules /home/threeears/apps/3ears/releases/20190606132401/node_modules )
+  INFO [6604bdee] Finished in 0.169 seconds with exit status 0 (successful).
+ DEBUG [2c712835] Running if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [2c712835] Command: if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi
+ DEBUG [f9dc0562] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [8e9827ae] Running /tmp/3ears/nvm-exec.sh yarn install --silent --no-progress as threeears@3ears.com
+ DEBUG [8e9827ae] Command: cd /home/threeears/apps/3ears/releases/20190606132401 && ( export NODE_VERSION="v12.4.0" ; /tmp/3ears/nvm-exec.sh yarn install --silent --no-progress )
+ DEBUG [fed573c6] 	Now using node v12.4.0 (npm v6.9.0)
+ DEBUG [fed573c6] 	(node:25229) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+ DEBUG [fed573c6] 	warning "mini-create-react-context@0.3.2" has incorrect peer dependency "prop-types@^15.0.0".
+ DEBUG [fed573c6] 	warning "@typescript-eslint/eslint-plugin@1.6.0" has incorrect peer dependency "eslint@^5.0.0".
+ DEBUG [fed573c6] 	warning "@typescript-eslint/eslint-plugin@1.6.0" has unmet peer dependency "typescript@*".
+ DEBUG [fed573c6] 	warning "@typescript-eslint/parser@1.6.0" has incorrect peer dependency "eslint@^5.0.0".
+ DEBUG [fed573c6] 	warning "@typescript-eslint/parser@1.6.0" has unmet peer dependency "typescript@*".
+ DEBUG [fed573c6] 	warning "babel-eslint@10.0.1" has incorrect peer dependency "eslint@>= 4.12.1".
+ DEBUG [fed573c6] 	warning "babel-jest@24.8.0" has incorrect peer dependency "@babel/core@^7.0.0".
+ DEBUG [fed573c6] 	warning "babel-loader@8.0.5" has incorrect peer dependency "@babel/core@^7.0.0".
+ DEBUG [fed573c6] 	warning "babel-loader@8.0.5" has incorrect peer dependency "webpack@>=2".
+ DEBUG [fed573c6] 	warning "babel-plugin-named-asset-import@0.3.2" has incorrect peer dependency "@babel/core@^7.1.0".
+ DEBUG [fed573c6] 	warning "css-loader@2.1.1" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "@typescript-eslint/eslint-plugin@1.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "@typescript-eslint/parser@1.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "babel-eslint@10.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint@5.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint-plugin-flowtype@2.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint-plugin-import@2.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint-plugin-jsx-a11y@6.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint-plugin-react@7.x".
+ DEBUG [fed573c6] 	warning "eslint-config-react-app@4.0.1" has incorrect peer dependency "eslint-plugin-react-hooks@1.x".
+ DEBUG [fed573c6] 	warning "eslint-loader@2.1.2" has incorrect peer dependency "eslint@>=1.6.0 <6.0.0".
+ DEBUG [fed573c6] 	warning "eslint-loader@2.1.2" has incorrect peer dependency "webpack@>=2.0.0 <5.0.0".
+ DEBUG [fed573c6] 	warning "eslint-plugin-flowtype@2.50.1" has incorrect peer dependency "eslint@>=2.0.0".
+ DEBUG [fed573c6] 	warning "eslint-plugin-import@2.16.0" has incorrect peer dependency "eslint@2.x - 5.x".
+ DEBUG [fed573c6] 	warning "eslint-plugin-jsx-a11y@6.2.1" has incorrect peer dependency "eslint@^3 || ^4 || ^5".
+ DEBUG [fed573c6] 	warning "eslint-plugin-react@7.12.4" has incorrect peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0".
+ DEBUG [fed573c6] 	warning "eslint-plugin-react-hooks@1.6.0" has incorrect peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0".
+ DEBUG [fed573c6] 	warning "file-loader@3.0.1" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "html-webpack-plugin@4.0.0-beta.5" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "mini-css-extract-plugin@0.5.0" has incorrect peer dependency "webpack@^4.4.0".
+ DEBUG [fed573c6] 	warning "optimize-css-assets-webpack-plugin@5.0.1" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "sass-loader@7.1.0" has incorrect peer dependency "webpack@^3.0.0 || ^4.0.0".
+ DEBUG [fed573c6] 	warning "terser-webpack-plugin@1.2.3" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "ts-pnp@1.1.2" has unmet peer dependency "typescript@*".
+ DEBUG [fed573c6] 	warning "url-loader@1.1.2" has incorrect peer dependency "webpack@^3.0.0 || ^4.0.0".
+ DEBUG [fed573c6] 	warning "webpack-dev-server@3.2.1" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "webpack-manifest-plugin@2.0.4" has incorrect peer dependency "webpack@2 || 3 || 4".
+ DEBUG [fed573c6] 	warning "workbox-webpack-plugin@4.2.0" has incorrect peer dependency "webpack@^2.0.0 || ^3.0.0 || ^4.0.0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-react-constant-elements@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/preset-env@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/preset-react@7.0.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@typescript-eslint/typescript-estree@1.6.0" has unmet peer dependency "typescript@*".
+ DEBUG [fed573c6] 	warning "tsutils@3.10.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev".
+ DEBUG [fed573c6] 	warning "babel-preset-jest@24.6.0" has incorrect peer dependency "@babel/core@^7.0.0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-class-properties@7.4.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-decorators@7.4.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-object-rest-spread@7.4.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-dynamic-import@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-classes@7.4.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-destructuring@7.4.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-flow-strip-types@7.4.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-react-display-name@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-runtime@7.4.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/preset-env@7.4.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/preset-typescript@7.3.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "jest-pnp-resolver@1.2.1" has incorrect peer dependency "jest-resolve@*".
+ DEBUG [fed573c6] 	warning "postcss-browser-comments@2.0.0" has incorrect peer dependency "browserslist@^4".
+ DEBUG [fed573c6] 	warning "acorn-dynamic-import@4.0.0" has incorrect peer dependency "acorn@^6.0.0".
+ DEBUG [fed573c6] 	warning "ajv-keywords@3.4.0" has incorrect peer dependency "ajv@^6.9.1".
+ DEBUG [fed573c6] 	warning "webpack-dev-middleware@3.6.2" has incorrect peer dependency "webpack@^4.0.0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-async-generator-functions@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-json-strings@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-object-rest-spread@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-optional-catch-binding@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-proposal-unicode-property-regex@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-async-generators@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-json-strings@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-object-rest-spread@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-optional-catch-binding@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-arrow-functions@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-async-to-generator@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-block-scoped-functions@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-block-scoping@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-classes@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-computed-properties@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-destructuring@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-dotall-regex@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-duplicate-keys@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-exponentiation-operator@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-for-of@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-function-name@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-literals@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-member-expression-literals@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-modules-amd@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-modules-commonjs@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-modules-systemjs@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-modules-umd@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-named-capturing-groups-regex@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-new-target@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-object-super@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-parameters@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-property-literals@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-regenerator@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-reserved-words@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-shorthand-properties@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-spread@7.2.2" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-sticky-regex@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-template-literals@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-typeof-symbol@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-unicode-regex@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-react-jsx@7.3.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-react-jsx-self@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-react-jsx-source@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/helper-create-class-features-plugin@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-decorators@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-flow@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-transform-typescript@7.4.4" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "ajv-errors@1.0.1" has incorrect peer dependency "ajv@>=5.0.0".
+ DEBUG [fed573c6] 	warning "acorn-jsx@5.0.1" has incorrect peer dependency "acorn@^6.0.0".
+ DEBUG [fed573c6] 	warning "request-promise-native@1.0.7" has incorrect peer dependency "request@^2.34".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-jsx@7.2.0" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "@babel/plugin-syntax-typescript@7.3.3" has incorrect peer dependency "@babel/core@^7.0.0-0".
+ DEBUG [fed573c6] 	warning "request-promise-core@1.1.2" has incorrect peer dependency "request@^2.34".
+  INFO [fed573c6] Finished in 42.195 seconds with exit status 0 (successful).
+ DEBUG [9bf29fb7] Running if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [9bf29fb7] Command: if test ! -d /home/threeears/apps/3ears/releases/20190606132401; then echo "Directory does not exist '/home/threeears/apps/3ears/releases/20190606132401'" 1>&2; false; fi
+ DEBUG [5e12819f] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [ff5b4143] Running /tmp/3ears/nvm-exec.sh yarn build as threeears@3ears.com
+ DEBUG [ff5b4143] Command: cd /home/threeears/apps/3ears/releases/20190606132401 && ( export NODE_VERSION="v12.4.0" ; /tmp/3ears/nvm-exec.sh yarn build )
+ DEBUG [f6f1166d] 	Now using node v12.4.0 (npm v6.9.0)
+ DEBUG [f6f1166d] 	yarn build v1.0.1
+ DEBUG [f6f1166d] 	(node:25709) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+ DEBUG [f6f1166d] 	$ react-scripts build
+ DEBUG [f6f1166d] 	Creating an optimized production build...
+ DEBUG [f6f1166d] 	Compiled successfully.
+
+ DEBUG [f6f1166d] 	File sizes after gzip:
+
+ DEBUG [f6f1166d] 	  43.8 KB  build/static/js/2.b2cdb5a3.chunk.js
+ DEBUG [f6f1166d] 	  762 B    build/static/js/runtime~main.a8a9905a.js
+ DEBUG [f6f1166d] 	  543 B    build/static/js/main.f91f8bf5.chunk.js
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	The project was built assuming it is hosted at the server root.
+ DEBUG [f6f1166d] 	You can control this with the homepage field in your package.json.
+ DEBUG [f6f1166d] 	For example, add this to build it for GitHub Pages:
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	  "homepage" : "http://myname.github.io/myapp",
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	The build folder is ready to be deployed.
+ DEBUG [f6f1166d] 	You may serve it with a static server:
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	  yarn global add serve
+ DEBUG [f6f1166d] 	  serve -s build
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	Find out more about deployment here:
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	  https://bit.ly/CRA-deploy
+ DEBUG [f6f1166d] 	
+ DEBUG [f6f1166d] 	Done in 14.25s.
+  INFO [f6f1166d] Finished in 15.853 seconds with exit status 0 (successful).
+  INFO [9e9e2b40] Running /usr/bin/env ln -s /home/threeears/apps/3ears/releases/20190606132401 /home/threeears/apps/3ears/releases/current as threeears@3ears.com
+ DEBUG [9e9e2b40] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env ln -s /home/threeears/apps/3ears/releases/20190606132401 /home/threeears/apps/3ears/releases/current )
+  INFO [8befc184] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [b8523f1a] Running /usr/bin/env mv /home/threeears/apps/3ears/releases/current /home/threeears/apps/3ears as threeears@3ears.com
+ DEBUG [b8523f1a] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env mv /home/threeears/apps/3ears/releases/current /home/threeears/apps/3ears )
+  INFO [9b1bd35a] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [b4513b30] Running /usr/bin/env ls -x /home/threeears/apps/3ears/releases as threeears@3ears.com
+ DEBUG [b4513b30] Command: ( export NODE_VERSION="v12.4.0" ; /usr/bin/env ls -x /home/threeears/apps/3ears/releases )
+ DEBUG [438e069c] 	20190606132401
+ DEBUG [438e069c] Finished in 0.162 seconds with exit status 0 (successful).
+ DEBUG [61a086a1] Running if test ! -d /home/threeears/apps/3ears/releases; then echo "Directory does not exist '/home/threeears/apps/3ears/releases'" 1>&2; false; fi as threeears@3ears.com
+ DEBUG [61a086a1] Command: if test ! -d /home/threeears/apps/3ears/releases; then echo "Directory does not exist '/home/threeears/apps/3ears/releases'" 1>&2; false; fi
+ DEBUG [ff9ace0d] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [996935d3] Running /usr/bin/env echo "Branch master (at bd9a2da9a9d4bd16319099f0371c903bb63e3342) deployed as release 20190606132401 by andreibuiko" >> /home/threeears/apps/3ears/revisions.log as threeears@3ears.com
+ DEBUG [996935d3] Command: cd /home/threeears/apps/3ears/releases && ( export NODE_VERSION="v12.4.0" ; /usr/bin/env echo "Branch master (at bd9a2da9a9d4bd16319099f0371c903bb63e3342) deployed as release 20190606132401 by andreibuiko" >> /home/threeears/apps/3ears/revisions.log )
+  INFO [a11eb60b] Finished in 0.164 seconds with exit status 0 (successful).
